@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="SuiteName"> <!-- parallel = "tests"/"classes"/"methods"-->
+    <!--groups>
+        <run>
+            <include name="Purchase"></include>
+        </run>
+    </groups-->
+    <listeners>
+        <listener class-name="selenium_project.TestComponents.Listeners"></listener>
+    </listeners>
+    <test name="Submit Order Test"> <!-- thread-count = "5" (no.of methods that can run simultaneously)-->
+        <classes>
+            <!-- Add your test classes here -->
+            <class name="selenium_project.tests.StandAloneTest"/>
+        </classes>
+    </test>
+    <test name="Error Validations Test">
+        <classes>
+            <class name="selenium_project.tests.ErrorValidations"/>
+        </classes>
+    </test>
+</suite>
