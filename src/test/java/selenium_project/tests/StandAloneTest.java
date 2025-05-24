@@ -17,6 +17,8 @@ import selenium_project.pageobjects.OrderPage;
 
 import selenium_project.pageobjects.ProductCatalogue;
 
+// new comments added
+
 public class StandAloneTest extends BaseTest{
     @Test(dataProvider = "getData", groups = {"Purchase"})
     public void SubmitOrder(HashMap<String, String> input) throws IOException, InterruptedException{
