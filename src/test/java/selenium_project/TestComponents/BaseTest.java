@@ -34,7 +34,7 @@ public class BaseTest {
     public WebDriver initializeDriver() throws FileNotFoundException, IOException
     {
         Properties prop = new Properties();
-        FileInputStream fis = new FileInputStream("C:\\Users\\Ritwik\\Desktop\\Java Selenium\\demo_project\\src\\main\\java\\selenium_project\\resources\\GlobalData.properties");
+        FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\java\\selenium_project\\resources\\GlobalData.properties");
         prop.load(fis);
         String browserName = System.getProperty("browser") != null ? System.getProperty("browser") : prop.getProperty("browser");
         // String browserName = prop.getProperty("browser");

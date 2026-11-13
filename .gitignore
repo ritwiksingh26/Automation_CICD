@@ -1,0 +1,14 @@
+### Build output ###
+target/
+
+### Test output ###
+reports/
+ExtentreportsDemo/
+
+### IDE ###
+.vscode/
+.idea/
+*.iml
+.classpath
+.project
+.settings/
